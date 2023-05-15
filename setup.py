@@ -70,7 +70,7 @@ def get_extensions():
     extra_compile_args = {"cxx": []}
     define_macros = []
 
-    if CUDA_HOME is not None and (torch.cuda.is_available() or "TORCH_CUDA_ARCH_LIST" in os.environ):
+    if True:
         print("Compiling with CUDA")
         extension = CUDAExtension
         sources += source_cuda
